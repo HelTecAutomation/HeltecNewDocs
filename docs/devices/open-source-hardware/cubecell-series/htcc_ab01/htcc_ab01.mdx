@@ -1,0 +1,63 @@
+---
+sidebar_position: 3
+title: HTCC AB01 Dev Board V2
+---
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import styles from '@site/src/css/Styles.module.css';
+import DocCard from '@theme/DocCard';
+
+<div style={{ textAlign: 'center' }}>
+  ![](img/1.png)
+</div>
+
+HTCC-AB01 (V2) is based on ASR6052, the chip is already integrated with the PSoC® 4000 series MCU (ARM® Cortex® M0+ Core) and SX1262. We have done a lot of migration and development, made it perfectly support Arduino®, can run the LoRaWAN protocol stably, and can easily connect lithium batteries and solar panels. HTCC-AB01 (V2) is a Dev-Board. Which is an upgraded version of HTCC-AB01, and can pin-to-pin placement with the previous version.
+
+{<div className={styles.btnContainer}>
+  <a href="https://heltec.org/project/htcc-ab01-v2/" className={styles.btnLink1}>
+    Product Page
+  </a>
+</div>}
+
+## Product characteristics
+- Arduino-compatible, CE & FCC certified
+- Based on ASR605x (integrated PSoC® 4000 MCU + SX1262), supporting LoRaWAN 1.0.2
+- Ultra-low power design, only 3.5µA in deep sleep
+- Power management: battery interface, protection, auto switching, solar charging
+- Communication & interfaces: optimized RF, long range, protected USB, built-in CP2102
+
+## Important parameters
+| [parameters](https://resource.heltec.cn/download/CubeCell/HTCC-AB01_V2/HTCC-AB01_V2(Rev1.1).pdfv)         | HTCC-AB01_V2          |
+|--------------------|----------------------------|
+|MCU      |	 ASR6502             |
+|LoRa Chipset   |    SX1262             |
+|Max TX Power     |   	21±1dBm               |
+| USB to Serial Chip          | 	CP2102          |
+|Power consumption          |  Deep Sleep 3.5uA |
+| Dimensions         |   40.64 * 22.86 * 7.6 mm    |
+
+## Version comparison
+|                  | HTCC-AB01                                 | HTCC-AB01(V2)                                                 |
+|------------------|-------------------------------------------|---------------------------------------------------------------|
+| MCU              | ASR6501                                   | ASR6502                                                       |
+| USB Socket       | Micro USB                                 | USB Type C                                                    |
+| Crystal Oscillator | Ordinary crystal oscillator              | High precision temperature compensated crystal oscillator      |
+| Other Update     |                                           | Better impedance matching of RF circuits.                     |
+
+## Important Resources
+- [Datasheet](https://resource.heltec.cn/download/CubeCell/HTCC-AB01_V2/HTCC-AB01_V2(Rev1.1).pdf)
+- [Schematic diagram](https://resource.heltec.cn/download/CubeCell/HTCC-AB01_V2/HTCC-AB01_V2_Schematic_Diagram.pdf)
+- [Pin Map](https://resource.heltec.cn/download/CubeCell/HTCC-AB01_V2/HTCC-AB01_V2.png)
+- [AT Command List](https://resource.heltec.cn/download/CubeCell/AT_Command_list/CubeCell_Series_AT_Command_User_Manual_V0.6.pdf)
+- [Related links](https://resource.heltec.cn/download/CubeCell/HTCC-AB01_V2)
+
+## Product Usage Guide
+
+**The following documentation will help you get started quickly with the product**
+- [Install development environment](/docs/devices/open-source-devices/cubecell-series/cubecell-quick-start?cubecell=cubecell)
+- [Applied to LoRaWAN](/docs/devices/open-source-devices/cubecell-series/cubecell-quick-start?cubecell=lorawan)
+- [Connect a Solar Panel](/docs/devices/open-source-devices/cubecell-series/solar_panel)
+- [Frequently Asked Questions](/docs/devices/open-source-devices/cubecell-series/frequently_asked_questions)
+- [How to use license](docs/devices/general-docs/how_to_use_license)

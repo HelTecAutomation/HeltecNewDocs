@@ -1,0 +1,55 @@
+---
+sidebar_position: 6
+title: Wireless Paper
+---
+# Wireless Paper
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import styles from '@site/src/css/Styles.module.css';
+import DocCard from '@theme/DocCard';
+
+<div style={{ textAlign: 'center' }}>
+  ![](img/1.png)
+</div>
+
+Wireless Paper is an E-Ink development kit with multiple wireless drive methods. Collaborate with the sample programs and development tools we provide, users can operate the display via Bluetooth, Wi-Fi and LoRa. This board is equipped with a default 2.13-inch black and white E-Ink display screen, continuous display for 180 days after power outage. It can be used to develop applications such as electronic tags and identity tags.
+
+{<div className={styles.btnContainer}>
+  <a href="https://heltec.org/project/wireless-paper/" className={styles.btnLink1}>
+    Product Page
+  </a>
+</div>}
+
+## Product characteristics
+- ESP32-S3FN8 + SX1262 Chipset, device can be driven via Wi-Fi, BLE and LoRa
+- Default 250 x 122 pixels black-white display, it can also be used to drive E-Ink screens of other sizes
+- High contrast, high reflectance, ultra-wide viewing angle
+- Low power consumption, 20uA in deep sleep
+- Internal integrated display screen refresh page function, users can drag and drop BMP images to achieve refresh
+
+
+## Important parameters
+| [parameters](https://resource.heltec.cn/download/Wireless_Paper/Wireless-Paper.pdf)         | Wireless Paper         |
+|--------------------|----------------------------|
+|Master and LoRa Chip      |	    ESP32-S3FN8 + SX1262                |
+| PowerSupply  |     lithiumbattery, USBType-C               |
+| ScreenSize     |   	 2.13Inch              |
+| DisplayResolution         | 	122(H)x250(V)Pixel          |
+| ActiveArea          |   23.705x48.55|
+| Dimensions         |   	72.00 * 30.00mm    |
+
+
+## Important Resourcess
+
+- [Datasheet](https://resource.heltec.cn/download/Wireless_Paper/Wireless-Paper.pdf)
+- [Schematic diagram](https://resource.heltec.cn/download/Wireless_Paper/Wireless_Paper_V0.4_Schematic_Diagram.pdf)
+- [Hardware Update Log](docs/devices/open-source-devices/esp32-series/lora-32/wireless-paper/hardware-update-log)
+
+
+## Product Usage Guide
+**The following documentation will help you get started quickly with the product**
+- [Install development environment](/docs/devices/open-source-devices/esp32-series/esp32-quick-start?esp32=esp32)
+- [Applied to LoRaWAN](/docs/devices/open-source-devices/esp32-series/esp32-quick-start?esp32=lorawan)
+- [Applied to Meshtatic](/docs/devices/open-source-devices/esp32-series/esp32-quick-start?esp32=meshtastic)
+- [How to use license](docs/devices/general-docs/how_to_use_license)

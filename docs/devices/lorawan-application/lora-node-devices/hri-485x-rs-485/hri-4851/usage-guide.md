@@ -1,0 +1,90 @@
+---
+sidebar_position: 2
+title: HRI-4851 Usage Guide
+---
+
+
+## HRI-4851 Configuration
+
+**This topic describes how to configure HRI-4851 P2P/P2MP communication.**
+
+## Hardware Connection
+1. As shown in the figure,Connect the power wires and data bus of the device.
+
+   ![](img/1.png) 
+
+2. Install the antenna we provided.
+
+   ![](img/02.png) 
+
+## Enter Configuration Page
+1. Press the RST button, until the white LED flashed quickly, at which point the device enters the configuration mode.
+
+  ![](img/12.png)
+
+2. In configuration mode (White LED flashed quickly), you can find HRI-485x's Wi-Fi, in general, it has the format"HRI-4851L-xxxx", connect to this WiFi.
+
+![](img/wifi.png)
+
+3. Enter *192.168.4.1* through the browser.
+
+![](img/ap.png)
+
+:::warning
+Note that if you have just configured another device, don't just refresh '192.168.4.1', you should retype it.
+:::
+
+## Configure
+1. Enter the configuration page, under the `Mode` option, select `Node`.
+
+![](img/04.png)
+
+2. In general, HRI-4851 with the same **Lora Parameters, Address, Group, Key** can communicate with each other. 
+
+![](img/4851.png)
+
+:::note
+'BaudRate' 'Data Mode' should be consistent with the terminal device.
+:::
+
+:::tip
+When the Address is *FFFF*, the device communicates with a device of any address(Group still has to be the same)
+:::
+
+3. By clicking the `Enable periodic query` option, you can set up to 10 polling commands, and when multiple commands are run at the same time, they will be executed automatically at five-second intervals.
+
+![](img/03.png)
+
+4. Click `Submit` when the configuration is complete. 
+
+**If you need to upload HRI-4851 data to the server, you need to use with HRI-4852: [HRI-4852 User Manual](/docs/devices/open-source-devices/plug-play/hri-485x-rs-485/hri-4852/usage-guide)**
+
+## Data Format
+As shown above, HRI-4851 with the same parameters can communicate with each other, such as, A terminal sends *0xaa 0xbb*, and B terminal receives *0xaa 0xbb*.
+
+![](img/05.png)
+
+**When you are familiar with the basic functions of HRI-4851 and HRI-4852, you can use the following two functions of HRI-4851 to make more networking methods**
+
+## HRI-4851 Relayer
+
+The HRI-4851 can realize the relay function, and the two terminals of its connection can be either the HRI-4851 or the HRI-4852.
+
+![](img/relayer(1).png)
+
+Enter the configuration page of HRI-4851, select `Relay `in the `Mode` option, and then configure its lora parameters and `Group` to be the same as the two terminals.
+
+![](img/relayer.png)
+
+## HRI-4851 Gateway
+
+When HRI-4851 is in gateway mode, it can communicate with all HRI-4851 in the same Group.
+
+![](img/06.png)
+
+This feature does not connect to a server, but is available directly in the terminal.
+
+Enter the configuration page of HRI-4851, select `Gateway `in the `Mode` option, and then configure its lora parameters and `Group` to be the same as the two terminals.
+
+![](img/gateway.png)
+

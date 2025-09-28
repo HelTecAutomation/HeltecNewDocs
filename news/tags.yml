@@ -1,0 +1,19 @@
+heltec:
+  label: Heltec
+  permalink: /heltec
+  description: Facebook tag description
+
+maker:
+  label: Maker
+  permalink: /maker
+  description: maker tag description
+
+iot:
+  label: IoT
+  permalink: /iot
+  description: IoT tag description
+
+contest:
+  label: Contest
+  permalink: /contest
+  description: contest tag description

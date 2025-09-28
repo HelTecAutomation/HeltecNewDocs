@@ -1,0 +1,54 @@
+---
+sidebar_position: 11
+title: Wireless Bridge
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import styles from '@site/src/css/Styles.module.css';
+import DocCard from '@theme/DocCard';
+
+<div style={{ textAlign: 'center' }}>
+  ![](img/1.png)
+</div>
+
+Based on ESP32 and SX1276 chips, onboard 8M Byte SDRAM and 8M Byte FLASH, WiFi and Bluetooth can work at the same time. It is a bridge that converts “WiFi/Bluetooth – LoRa” signals to each other.
+
+{<div className={styles.btnContainer}>
+  <a href="https://heltec.org/project/wireless-bridge/" className={styles.btnLink1}>
+    Product Page
+  </a>
+</div>}
+
+## Product characteristicss
+
+- CE certified, with ESP32 dual-core MCU + ULP and SX1276 LoRa chip
+- 8 MB SDRAM + 8 MB Flash, enabling simultaneous Wi-Fi and Bluetooth
+- +5V Micro USB power, with regulator, ESD, short-circuit, and RF protection
+- SMA antenna connectors for LoRa, Wi-Fi, and Bluetooth
+- CP2102 USB-to-serial, easy programming/debugging, Arduino supported
+
+
+## Important parameters
+| [parameters](https://resource.heltec.cn/download/Wireless_Bridge/bridge.pdf)         | Wireless Bridge     |
+|--------------------|----------------------------|
+|Master and LoRa Chip      |	     ESP32-D0WDQ6 +  SX1276                 |
+|USB to Serial Chip |  	CP2102             |
+| Battery     |  3.7VLithium(SH1.25*2interface)                |
+| Bluetooth      | 	BluetoothV4.2BR/EDRandBluetoothLEsepcification         |
+|P Max.TXPower       |  	 18±1dBm   |
+| Dimensions         |   	66(+10) * 30* 15 mm    |
+
+
+## Important Resources
+- [Datasheet](https://resource.heltec.cn/download/Wireless_Bridge/bridge.pdf)
+- [Schematic diagram](https://resource.heltec.cn/download/Wireless_Bridge/Schematic_Diagram_HTIT-WB_V0.2.pdf)
+- [Related links](https://resource.heltec.cn/download/Wireless_Bridge)
+
+## Product Usage Guide
+
+**The following documentation will help you get started quickly with the product**
+- [Install development environment](/docs/devices/open-source-devices/esp32-series/esp32-quick-start?esp32=esp32)
+- [Applied to LoRaWAN](/docs/devices/open-source-devices/esp32-series/esp32-quick-start?esp32=lorawan)
+- [Applied to Meshtatic](/docs/devices/open-source-devices/esp32-series/esp32-quick-start?esp32=meshtastic)
+- [How to use license](docs/devices/general-docs/how_to_use_license)

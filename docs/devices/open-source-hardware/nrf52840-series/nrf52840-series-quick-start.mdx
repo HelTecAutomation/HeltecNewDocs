@@ -1,0 +1,561 @@
+---
+sidebar_position: 2
+title: nRF52840 Series Quick Start
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import styles from '@site/src/css/Styles.module.css';
+import DocCard from '@theme/DocCard';
+
+<Tabs
+groupId="nrf52840"
+queryString="nrf52840"
+defaultValue="nrf52840"
+className={styles.customTabs}
+values={[
+{label: 'nRF52840 Series Quick Start', value:'nrf52840'},
+{label: 'LoRaWAN', value:'lorawan'},
+{label: 'Meshtastic', value:'meshtastic'},
+]}>
+
+<TabItem value="nrf52840">
+
+# nRF52840 Series Quick Start
+
+This topic describes how to install the development environments and libraries for the Mesh Node family and how to use the sample code.
+## Install Framework
+
+**there are three methods to install the framework, choose one of them.**`
+
+
+### Via Arduino board manager
+
+This section describes "How to install the Heltec-nRF52 development framework directly from the Arduino board manager".
+
+1. Install Arduino IDE, you can refer to this link: [https://www.arduino.cc/en/software](https://docs.heltec.org/general/how_to_install_git_and_arduino.html).
+2. Open Arduino IDE, and click `File`->`Peferences`->`Settings`
+
+![](img/quick_start/01.png)
+
+![](img/quick_start/02.png)
+
+3. Input following json url to board manager URLs:
+
+```
+https://github.com/HelTecAutomation/Heltec_nRF52/releases/download/1.7.0/package_heltec_nrf_index.json
+
+```
+
+![](img/quick_start/03.png)
+
+4. Click`OK` to return to the main Arduino interface.
+4. Click `Boards Manager...`, search `Heltec-nRF52` in the new pop-up dialog, select the latest `releases` and  click `install`.
+
+![](img/quick_start/04.png)
+
+5. The installation was successful when a prompt appears.
+
+![](img/quick_start/15.png)
+
+:::tip
+If you disconnect before the installation is complete, don't panic. Click **Install** to continue the download.
+:::
+
+6. Click `tools` to confirm whether the development environment is installed successfully.
+
+![](img/quick_start/13.png)
+
+### Via Git
+
+1. 
+
+"**Github**" describes how to install this framework via git. Just follow the steps in the relevant link:
+
+:::tip
+Please follow the suggested path as much as possible to avoid unnecessary trouble.
+:::
+
+- [For Windows](https://github.com/HelTecAutomation/Heltec_nRF52/blob/main/InstallGuide/windows.md)
+- [For MacOS](https://github.com/HelTecAutomation/Heltec_nRF52/blob/main/InstallGuide/mac.md)
+- [For Linux(Ubuntu/Debian)](https://github.com/HelTecAutomation/Heltec_nRF52/blob/main/InstallGuide/debian_ubuntu.md)
+
+
+### Via Local File
+
+1. Download the development environment. 
+
+2. Open Arduino IDE, and click `File`->`Peferences`.
+
+![](img/quick_start/01.png)
+
+3. Go to the folder in the red box.
+
+![](img/quick_start/09.png)
+
+4. Create a new "**hardware**" folder in the Arduino folder. If there is already a "hardware" folder, you don't need to create a new one.
+
+![](img/quick_start/10.png)
+
+4. Go to the "hardware" folder and extract "heltec" into this folder.
+
+![](img/quick_start/11.png)
+
+:::tip
+This folder name is custom. If you have installed other heltec framework, you can use this folder directly.
+:::
+
+5. Go to the "heltec" folder, refer to the figure below to confirm whether the path in the red box is correct. Unzip the compressed package you downloaded to this path.
+
+![](img/quick_start/12.png)
+
+6. Restart the Arduino IDE to confirm whether the development environment is installed successfully.
+
+![](img/quick_start/13.png)
+
+
+## Running an Example
+
+Connect your Mesh Node series board to computer via a **high quality** Micro USB cable *(This is the most common reason we had encountered can't program software)*. 
+
+1. Open the `tools` option and select the corresponding device and port.
+
+![](img/quick_start/06.png)
+
+2. Select an example
+
+![](img/quick_start/07.png)
+
+3. Compile and upload
+
+![](img/quick_start/08.png)
+
+## New a sketch
+
+1. In Arduino IDE, click `File --> new` .
+
+   ![](img/quick_start/14.png)
+
+2. Copy the following code:
+
+```arduino
+  // the setup routine runs once when starts up
+  void setup(){
+
+    // Initialize the Heltec ASR650x object
+
+
+  // the loop routine runs over and over again forever
+  void loop() {
+
+  }
+```
+
+
+  
+</TabItem>
+<TabItem value="lorawan" >
+# LoRaWAN Getting Start  
+
+This article is intended to describe how to use the [Heltec ESP32 LoRaWAN library](https://github.com/HelTecAutomation/Heltec_ESP32/tree/master/examples/LoRaWAN/LoRaWan).
+
+This library is make LoRaWAN 1.0.2 protocol running with ESP32 Arduino. Only support the ESP32 + LoRa series products made by [HelTec Automation(TM)](https://heltec.org), and a [LoRa gateway](https://heltec.org/proudct_center/lora/lora-gateway/) is must needed.
+
+:::warning
+Heltec ESP32 LoRaWAN library need a license to active, it's relative to ESP32's Chip ID. Query your board's license here: [http://resource.heltec.cn/search](http://resource.heltec.cn/search).
+:::
+
+<Tabs>
+  <TabItem value="configuration_parameter" label="LoRaWAN Configuration Parameter" default>
+
+# Config LoRa Parameters
+
+
+## Preparation
+1. Install Arduino IDE. How to install please click [here](/docs/devices/general-docs/how_to_install_git_and_arduino).
+2. Install [Heltec nRF32 series Arduino development framework](https://github.com/HelTecAutomation/Heltec_nRF52).  Installation manual  please refer to [here](/docs/devices/open-source-devices/nrf52840-series/nrf52840-series-quick-start).
+3. An [Mesh Node](https://heltec.org/).
+4. High quality USB cable. 
+
+## Configure Parameters
+1. Connect the development board to the computer through USB data cable.
+
+2. Open the Arduino and in the `Tools` option, select the appropriate `Board`, `Port`.
+
+![](img/config_parameter/01.png)
+
+3. Follow the path shown below to open the LoraWAN demo code.
+
+![](img/config_parameter/02.png)
+
+4. Fill in **DevEu** **AppEui** **AppKey** in the following figure in the red box in the example format, which will be used in the website registration.
+
+![](img/config_parameter/03.png)
+
+  - DevEui -- Mote device IEEE EUI (big endian), 8 bytes;
+  - AppEui -- Application IEEE EUI (big endian), 8 bytes;
+  - AppKey -- AES encryption/decryption cipher application key, 16 bytes;
+
+:::tip
+This example uses the OTAA pattern as an example, and for the differences in the ABP pattern, please refer to this link: [ABP mode](/docs/devices/general-docs/lorawan-instructions/lorawan_abp)
+:::
+
+5. Set LoRaWAN parameter:
+
+   ![](img/config_parameter/07.png)
+
+   - ① Channel: It takes effect when you select CN470 or US915. The default is 0-7. Please refer to [Channel's calculation method]([LoRaWAN example Sub-Band usage (AU915) — main latest documentation (heltec.org)](/docs/devices/general-docs/lorawan-instructions/lorawan-sub-band-usage). 
+
+   - ② LoRaMacRegion: LoRaWAN Frequency Plans [LoRaWAN Frequency Plans — main latest documentation (heltec.org)](/docs/devices/general-docs/lorawan-instructions/lorawan_frequency_plans).
+
+   - ③ DeviceClass: LoRaWAN Operation Mode, you can type Class_A or Class_C.
+
+   - ④ DutyCycle: LoRaWAN uplink transmission interval. 
+
+   - ⑤ OTAA/ABP: LoRaWAN access mode, ‘1’ means OTAA, '0' means ABP.
+
+   - ⑥ ADR/DR:  ‘true’ means ADR, 'false' means DR, how to set DR please refer to "Set DR".
+
+   - ⑦ TxConfirmed: 'ture' means confirmed, 'false' means unconfirmed.
+
+   - ⑧ AppPort: LoRaWAN downlink port.
+
+6. Effective load is here.
+
+![](img/config_parameter/05.png)
+
+:::note
+Print too much messages may cause the system unstable.
+:::
+
+7. Click `Upload` to upload the code.
+
+![](img/config_parameter/06.png)
+
+
+
+</TabItem>
+<TabItem value="connect-to-server" label="Connect to LoRaWAN server" default>
+
+## Preparation
+1. A ESP32 + LoRa node that's configured and uploaded code, as described in the previous topic:: **[“ESP32 + LoRa” Node Preparation & Config Parameters](/docs/devices/open-source-devices/esp32-series/esp32-quick-start?esp32=lorawan)**
+2. A LoRa server, We recommend the following three:
+- [TTN/TTS](https://console.thethingsnetwork.org/)
+- [ChirpStack](https://www.chirpstack.io/)
+- [SnapEmu](https://platform.snapemu.com/)
+
+3. A Gateway that matches the **LoRaWAN region** of the node, and already is connected to the lora server. If you are using Heltec Gateway, you can find out how to connect to the server in the [Heltec Gateway documentation](/docs/devices/lora-gateway/)
+
+## Important to know
+
+:::tip 
+Regardless of which LoRaWAN NS, the parameters that need to be configured are similar. Ensuring that the relevant configurations of NS and Node are consistent is the key to ensuring successful LoRaWAN communication.
+:::
+
+**Device Type**
+
+Generally, you will be asked to select a LoRa Gateway or LoRa Node.
+
+**LoRaWAN Class**
+
+`OTAA` or `ABP`, choose one of the while working, keep LoRa Node and NS select the same LoRaWAN Class.
+
+*For development devices with source code, you may see something like this:*
+
+![](img/connect_to_snapemu/03.png)
+
+
+
+**Region**
+
+LoRaWAN protocol agreement RF communication parameters. For technical details, please refer to [LoRaWAN™ 1.0.2 Regional Parameters](https://resource.heltec.cn/download/LoRaWANRegionalParametersv1.0.2_final_1944_1.pdf), also the [LoRaWAN Frequency Plans](/docs/devices/general-docs/lorawan-instructions/lorawan_frequency_plans) and [LoRaWAN Frequency Plans and Regulations by Country/Region](/docs/devices/general-docs/lorawan-instructions/lorawan_frequency_plans_by_country) can make sense to you.
+
+The region setting of `LoRa Node`, `LoRa Gateway`, `LoRaWAN NS` should be strictly the same.
+
+*For development devices with source code, you may see something like this:*
+
+![](img/connect_to_snapemu/05.png)
+
+**OTAA Parameter**
+
+For OTAA LoRaWAN Class, mainly include`DevEUI`, `AppEUI` (Also called `JoinEUI`), `AppKey`, the LoRa Node and NS should strictly keep the same.
+
+![](img/connect_to_snapemu/07.png)
+
+
+
+:::note
+If you select ABP, you do not need to set OTAA parameters.
+:::
+
+**ABP Parameter**
+
+For ABP LoRaWAN Class, mainly include `NetworkSecuritykey`, `ApplicationSecuritykey`, `DeviceAddress`, the LoRa Node and NS should strictly keep the same.
+
+*For development devices with source code, you may see something like this:*
+
+![](img/connect_to_snapemu/09.png)
+
+:::note 
+If you select ABP, you do not need to set OTAA parameters.
+:::
+
+## Connect to LoRaWAN Server
+
+Before that, make sure there is a LoRa Gateway active in your server.
+
+<Tabs>
+<TabItem value="connect-to-snapemu" label="Connect to  SnapEmu" default>
+
+### Manual registration on SnapEmu
+
+Log-in to [SnapEmu](https://platform.snapemu.com/dashboard/) by using their [Heltec website](https://heltec.org) account. Access into the devices page to register new device. 
+
+![](img/connect_to_snapemu/01.png)
+
+Click `+` and file in relevant device information.
+
+![](img/connect_to_snapemu/02.png)
+
+In the `Add device` step, file in the LoRa Node parameters and double check to make sure the content are the same with each other. If everything goes well, LoRa Node is successfully registered after `Submit`.
+
+
+
+
+
+</TabItem>
+<TabItem value="connect-to-ttn" label="Connect to TTN/TTS" default>
+
+:::note
+TTN/TTS is not Heltec's business, we cannot provide technical support for this platform, please refer to the official documentation of [TTN/TTS](https://www.thethingsnetwork.org/).
+:::
+
+1. Log in to the [TTS server web page](lora.heltec.org), register a new “Applications” .
+
+![](img/connect_to_gateway/06.png) 
+
+2. Create application
+
+![](img/connect_to_gateway/07.png)
+
+3. You can freely fill in the Application information in the red box, and click `Creat application` when you're done.
+
+![](img/connect_to_gateway/08.png)
+
+4. Register an end device.
+
+![](img/connect_to_gateway/81.png)
+
+5. Choose `Enter end device specifics manually`, Select the frequency band corresponding to the node, 
+
+![](img/connect_to_gateway/09.png)
+
+6. The LoRaWAN version is chosen to be 1.0.2 B
+
+![](img/connect_to_gateway/10.png)
+
+The `Show advanced activation, LoRaWAN class and cluster settings` option has some other LoRaWAN parameter Settings such as OTAA/ABP.CLASS A/C, these parameters default to OTAA and CLASS A, in general need to be consistent with the node Settings.
+
+![](img/connect_to_gateway/11.png)
+
+7. Fill in JoinEUI and click confirm.
+
+![](img/connect_to_gateway/12.png)
+
+:::tip
+In code or some application products, JoinEUI is represented as AppEUI.
+:::
+
+![](img/connect_to_gateway/13.png)
+
+8. Fill in DevEUI and AppKey.
+
+![](img/connect_to_gateway/14.png)
+
+:::tip
+The End device ID is automatically generated when you fill in DevEUI.
+:::
+
+![](img/connect_to_gateway/31.png)
+
+9. Click to register.
+
+![](img/connect_to_gateway/17.png)
+
+After registration is complete, if all is well, you will see the device active.
+
+![](img/connect_to_gateway/18.png)
+
+
+
+</TabItem>
+<TabItem value="connect-to-chirpstack" label="Connect to  ChirpStack" default>
+
+:::note
+ChirpStack is not Heltec's business, we cannot provide technical support for this platform, please refer to the official documentation of [ChirpStack](https://www.chirpstack.io/).
+:::
+
+Register a new device in ChirpStack’s “Applications” page. Enter the device name, description, DevEUI. Select Device-profile.
+
+![](img/connect_to_gateway/20.png)
+
+Enter the Application key of the device.
+
+![](img/connect_to_gateway/21.png)
+
+After registration is complete, if all is well, you will see the device active.
+
+![](img/connect_to_gateway/22.png)
+
+
+</TabItem>
+</Tabs>
+
+## Important Hints
+
+Please double check the following two things:
+
+1. The LoRaWAN parameters is the same as server!
+2. The listening frequency of your LoRa Gateway is the same as ESP32 LoRa node's sending frequency. We strictly follow [LoRaWAN™ 1.0.2 Regional Parameters rB](https://resource.heltec.cn/download/LoRaWANRegionalParametersv1.0.2_final_1944_1.pdf);
+
+
+</TabItem>
+</Tabs>
+
+
+
+
+
+</TabItem>
+<TabItem value="meshtastic" >
+
+**Meshtastic®** is a project that enables you to use inexpensive LoRa radios as a long range off-grid communication platform in areas without existing or reliable communications infrastructure. This project is 100% community driven and open source! For a more detailed description of Meshtastic please refer to their website and forum: [https://meshtastic.org/](https://meshtastic.org/).
+
+This topic describes how to get started with Meshtastic. 
+
+Currently, Heltec recommends the following devices for Meshtastic:
+
+| Product | Description |
+|-|:-|
+| [WiFi LoRa 32 V3](https://heltec.org/project/wifi-lora-32-v3/) | it is known as **Heltec V3** |
+| [Wireless Tracker](https://heltec.org/project/wireless-tracker/) | it comes with a GPS module. |
+| [Wireless Stick Lite](https://heltec.org/project/wireless-stick-lite-v2/) | no screen |
+| [Wireless Paper](https://heltec.org/project/wireless-paper/) | It comes with E-Ink screen |
+| [Wireless Bridge](https://heltec.org/project/wireless-bridge/) | It has a strong aluminum alloy shell |
+| [Capsule Sensor V3](https://heltec.org/project/heltec-capsule-sensor-v3/) | Stylish LoRaWAN toys that can integrate GPS modules |
+| [Wireless Mini Shell(HT-CT62)](https://heltec.org/project/ht-ct62/) | Cost-effective LoRa+ESP32-C3 module |
+| [Vision Master E213](https://heltec.org/project/vision-master-e213/) | 2.13 inch E-Ink Display |
+| [Vision Master E290](https://heltec.org/project/vision-master-e290/) | 2.90 inch E-Ink Display |
+| [Vision Master T190](https://heltec.org/project/vision-master-t190/) | 1.90 inch TFT Display |
+| [Mesh Node T114](https://heltec.org/project/mesh-node-t114) | 1.14 inch TFT Display, nRF52 MCU, Strong low power |
+
+*This topic uses WiFi LoRa 32 V3 as an example.*
+
+## Install ESP32 USB to Serial Drivers
+Use a USB cable to connect your computer to your device. Open your `Device Manager`, `Port`, if your computer doesn't recognize the device, You may need to install a driver from Silicon Labs for the CP210X USB to UART bridge: [CP210X USB to UART bridge - Download](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=overview)
+
+:::tip
+After installing the driver, make sure to reboot your computer to finish the installation process.
+:::
+
+## Flash Firmware
+**The Web-Based Installer requires either Chrome or Edge browsers but is an excellent choice for quickly flashing devices. This method is highly recommended for firmware flashing, especially for new users of the project, as it is easy to use.**
+
+1. Plug in your device.
+
+2. Visit [flasher.meshtastic.org](https://flasher.meshtastic.org/) requires Chrome or Edge browser. Follow the instructions, select the model of the corresponding board.
+
+![](img/meshtastic/02.png)
+
+4. Select the appropriate firmware version; the latest stable version is generally recommended.
+
+![](img/meshtastic/03.jpg)
+
+5. Click button to flash.
+
+![](img/meshtastic/04.png)
+
+:::tip
+Network issues can cause Flash buttons to fail to click. Of course, sometimes it appears gray, but it can still be manipulated.
+:::
+
+6. Continue.
+
+![](img/meshtastic/05.png)
+
+7. Click the `Full Erase and Install`, then `Erase flash and install`.
+
+![](img/meshtastic/06.png)
+
+:::tip
+Network problems cause Flash pages to stay in "Conneting......".
+:::
+
+8. Wait for the firmware to flash, and your device screen will display Meshtastic.
+
+![](img/meshtastic/07.jpg)
+
+## Install the Meshtastic App
+- [Android APP](https://meshtastic.org/docs/software/android/installation/)
+- [Web Client](https://client.meshtastic.org/)
+- [iOS/iPadOS/macOS App](https://meshtastic.org/docs/software/apple/installation/)
+
+***Let's take Android as an example to show you how to use the APP at an entry-level. We will continue to update IOS Web operations in the future.***
+
+## Set Regional Settings
+In order to start communicating over the mesh, you must set your region. This setting controls which frequency range your device uses and should be set according to your regional location.
+1. Open the app, find your device via Bluetooth as shown below. Click to connect the device. 
+
+![](img/meshtastic/08.jpg)![](img/meshtastic/09.jpg)
+
+:::tip
+If a window asks for a CAPTCHA appears, you need to look at your device's screen. The default CAPTCHA for devices without a screen is usually 123456. If not, contact the firmware issuer.
+:::
+
+
+![](img/meshtastic/10.jpg)
+
+3. Once paired, Click "UNSET" next to the device name. Select the region from the list according to your regional location. Of course, your hardware must support this frequency band.
+
+![](img/meshtastic/11.jpg)
+
+ You can refer to this link for the relationship between LoRaWAN bands and regions：[LoRaWAN_frequency_plans_by_country](/docs/devices/general-docs/lorawan-instructions/lorawan_frequency_plans_by_country)
+
+:::note 
+EU_433 and EU_868 have to adhere to an hourly duty cycle limitation of 10%. Your device will stop transmitting if you reach it, until it is allowed again
+:::
+
+5. Click the option below to select the channel you want to join。
+
+![](img/meshtastic/12.jpg)
+
+## Get started with Meshtastic
+1. The map option will be able to view the location information of the companion, which can be provided by the GPS module on the device, or by the phone to which the device is connected.
+
+![](img/meshtastic/13.jpg)
+
+2. The options below show some information about the companion device, such as latitude and longitude, signal strength, battery level, and so on.
+
+![](img/meshtastic/14.jpg)
+
+3. This is where you'll see the messages you want to send and receive, and they'll be displayed on the device screen.
+
+![](img/meshtastic/15.jpg)
+
+## More Settings and usage
+Click the top right button to see more configurable options.
+
+![](img/meshtastic/16.jpg)
+
+
+
+
+### Meshtatic devices
+
+| Test Sample           | Peak Temperature on Backside |
+| --------------------- | ---------------------------- |
+| **Without Heat Sink** | 63.6°C                       |
+| **With dual Heat Sinks** | 53.5°C (🔻10°C)      
+
+</TabItem>
+</Tabs>
