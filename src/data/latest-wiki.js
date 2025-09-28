@@ -1,7 +1,7 @@
-// Auto-generated Wiki data - Last updated: 2025-09-23T15:17:54.919Z
+// Auto-generated Wiki data - Last updated: 2025-09-28T09:16:04.153Z
 export const latestWikiData = [
   {
-    "id": 1,
+    "id": 2,
     "title": "2025 Heltec Maker Contest (Sticky)",
     "description": "The 2025 Heltec Maker Challenge is here—our very first global maker contest!",
     "category": "IoT",
@@ -42,7 +42,7 @@ export const latestWikiData = [
     "pinned": false
   },
   {
-    "id": 2,
+    "id": 1,
     "title": "2025 Heltec Maker Contest Privacy Policy",
     "description": "2025 Heltec Maker Contest Privacy Policy",
     "category": "IoT",

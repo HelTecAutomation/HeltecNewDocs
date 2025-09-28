@@ -3,12 +3,9 @@ sidebar_position: 0
 title: Heltec Automation Documention
 ---
 
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
 import styles from '@site/src/css/Styles.module.css';
-
 import DocCard from '@theme/DocCard';
 
 # Heltec Automation Documention Index
@@ -19,7 +16,6 @@ Since 2014, Heltec Automation has been a trusted PaaS provider dedicated to deli
 
 
 ![Overview](/img/main-img/3.png)
-
 
 ## Product Usage Guide
 
