@@ -3,7 +3,7 @@ sidebar_position: 4
 title: Wi-FI HaLow Module
 ---
 
-import styles from '@site/src/css/Styles.module.css';
+import styles from '@site/src/css/styles.module.css';
 
 <div style={{ textAlign: 'center' }}>
   ![](img/01.png)

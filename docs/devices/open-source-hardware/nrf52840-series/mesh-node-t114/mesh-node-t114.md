@@ -5,7 +5,7 @@ title: Mesh Node T114
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import styles from '@site/src/css/Styles.module.css';
+import styles from '@site/src/css/styles.module.css';
 import DocCard from '@theme/DocCard';
 
 <div style={{ textAlign: 'center' }}>

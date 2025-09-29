@@ -3,7 +3,7 @@ sidebar_position: 3
 title: Wi-FI HaLow Dongle
 ---
 
-import styles from '@site/src/css/Styles.module.css';
+import styles from '@site/src/css/styles.module.css';
 
 <iframe
   width="100%"

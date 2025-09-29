@@ -3,7 +3,7 @@ sidebar_position: 9
 title: Junction Box
 ---
 
-import styles from '@site/src/css/Styles.module.css';
+import styles from '@site/src/css/styles.module.css';
 
 <div style={{ textAlign: 'center' }}>
   ![](img/1.jpg)

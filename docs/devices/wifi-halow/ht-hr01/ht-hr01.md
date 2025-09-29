@@ -3,7 +3,7 @@ sidebar_position: 7
 title: Rasberry Pi HaLow Camera
 ---
 
-import styles from '@site/src/css/Styles.module.css';
+import styles from '@site/src/css/styles.module.css';
 
 
 <div style={{ textAlign: 'center' }}>
