@@ -120,7 +120,7 @@ Double-press the **USER/IO** button to enter or exit the function selection menu
 | **Recent** | View recent messages |
 | **Radio** | Configure radio communication settings |
 | **GPS** | View current GPS positioning information |
-| **Tracker** | Track and record the device's movement history |
+| **Tracker** | View the distribution of nearby devices on the map |
 | **System** | Configure device system settings |
 
 
