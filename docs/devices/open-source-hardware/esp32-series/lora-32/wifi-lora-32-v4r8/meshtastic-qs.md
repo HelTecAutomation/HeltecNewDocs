@@ -6,6 +6,8 @@ title: Meshtastic Quick Start
 import styles from '@site/src/css/styles.module.css';
 
 
+
+
 ## Flashing Meshtastic Firmware
 
 1. Connect the device to your computer via USB-C.
@@ -26,8 +28,57 @@ The firmware is provided as a .bin file that includes both `tft` and `factory` i
 
 ---
 
+## MUI
 
-***After flashing the firmware, the device will enter the MUI interface by default.***
+>After flashing the firmware, the device will enter the **MUI** interface by default. In the MUI interface, all operations are performed through the touchscreen. The **USER and IO** buttons are disabled and have no effect.
+
+
+
+### Touch Interaction
+
+- **Tap on the screen:** Next option, Wake(same as USER key)  
+- **Long press on the screen:** Confirm / Enter
+
+### MUI to BaseUI
+
+**Follow the steps below to switch from MUI to BaseUI:**
+
+`Settings` → `Reboot/Shutdown` → `Press and hold the Bluetooth icon` → `Select OK`
+
+---
+
+## BaseUI
+
+BaseUI is a simple and power-efficient interface. In this interface, touchscreen taps are only used to simulate the USER button operation.
+
+
+
+
+### Button Operations
+
+- **USER** (**Only effective in the touchscreen version of BaseUI**)
+
+  - Single press: Next option, Wake Screen
+  - Long press 2 seconds: Enter or select the current option
+  - Long press and hold for 5 seconds, then release: **Turn Off Screen**
+
+- **IO**(**Only effective in the touchscreen version of BaseUI**)
+
+  - Single press: Back / Return
+  - Long press: In the main menu, press and hold to `enter the convenient communication page` in the submenu, longpress to `exit`
+
+
+- **RST:** Restart the device.
+- **PWR:**	Power button. Press and hold for 3 seconds to power the device on or off.
+
+### BaseUI to MUI 
+
+**Follow the steps below to switch from BaseUI to MUI :**
+
+`Long press System` → `Reboot/Shutdown` → `Switch to MUI` → `Select Yes`
+
+
+---
 
 ## Sensor Setting
 

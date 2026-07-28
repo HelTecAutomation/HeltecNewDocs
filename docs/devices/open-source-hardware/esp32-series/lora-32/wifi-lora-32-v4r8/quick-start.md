@@ -14,6 +14,12 @@ After removing the casing, you can install the battery. Battery type:
 
 ![](img/qs/r82.jpg)
 
+
+
+
+
+
+
 ## Power On/Off
 Press and hold the Power button for 3 seconds to turn the device on or off.
 
@@ -29,7 +35,9 @@ If an SD card is required, insert it as shown in the diagram, ensuring it is ori
 ![](img/qs/sd.jpg)
 
 
-
+:::warning
+Before use, make sure the SD card is formatted as **exFAT**.
+:::
 
 
 ---

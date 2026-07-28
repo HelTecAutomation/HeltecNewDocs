@@ -78,7 +78,12 @@ After flashing the F&T firmware, the device must be activated through the Device
 ---
 
 
+
+
 ## Button Description
+
+![](img/ft/key.png)
+
 
 - **USER**(Only effective in the touchscreen version of F&T UI)
 
@@ -91,6 +96,9 @@ After flashing the F&T firmware, the device must be activated through the Device
   - Single Press: Next option, Wake
   - Long Press 2 seconds: Enter or select the current option.
   - Double Press: Return to the previous screen or navigate to the Function Selection Menu.
+
+- **RST:** Restart the device.
+- **PWR:**	Power button. Press and hold for 3 seconds to power the device on or off.
 
 ### Touch Interaction
 
