@@ -4,7 +4,7 @@ description: "Learn about LNA and how to enable or disable it on your device."
 category: "Technical"
 author: "Ashley"
 date: "2026-7-31"
-image: "img/lna/1.png"
+image: "img/lna/8.jpg"
 productCategory: ["LoRa32"]
 ---
 
