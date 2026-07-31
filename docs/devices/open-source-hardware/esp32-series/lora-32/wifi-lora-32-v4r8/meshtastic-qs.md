@@ -6,6 +6,7 @@ title: Meshtastic Quick Start
 import styles from '@site/src/css/styles.module.css';
 
 
+>Before using the F&T system, refer to [this document](/docs/devices/open-source-hardware/esp32-series/lora-32/wifi-lora-32-v4r8/quick-start) to complete the basic device configuration and setup.
 
 
 ## Flashing Meshtastic Firmware
@@ -30,7 +31,7 @@ The firmware is provided as a .bin file that includes both `tft` and `factory` i
 
 ## MUI
 
->After flashing the firmware, the device will enter the **MUI** interface by default. In the MUI interface, all operations are performed through the touchscreen. The **USER and IO** buttons are disabled and have no effect.
+***After flashing the firmware, the device will enter the **MUI** interface by default. In the MUI interface, all operations are performed through the touchscreen. The **USER and IO** buttons are disabled and have no effect.***
 
 
 

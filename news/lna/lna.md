@@ -1,7 +1,14 @@
 ---
-sidebar_position: 1
-title: LNA Guide
+title: "LNA Guide"
+description: "Learn about LNA and how to enable or disable it on your device."
+category: "Technical"
+author: "Ashley"
+date: "2026-7-31"
+image: "img/lna/1.png"
+productCategory: ["LoRa32"]
 ---
+
+
 
 # How to Properly Use LNA?
 
