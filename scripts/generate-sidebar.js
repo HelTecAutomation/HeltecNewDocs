@@ -172,6 +172,7 @@ const DIR_NAME_MAP = {
   'devices/open-source-hardware/esp32-series/vision-master/vison-master-t190': 'Vision Master T190',
   'devices/open-source-hardware/esp32-series/wireless_boot': 'Wireless Boot',
   'devices/open-source-hardware/esp32-series/three-platform': 'Three Platform',
+  'devices/open-source-hardware/radio_core_series/rc3268': 'RC3268',
   'devices/open-source-hardware/nrf52840-series': 'nRF52840 Series',
   'devices/open-source-hardware/nrf52840-series/mesh-node-t114': 'Mesh Node T114',
   'devices/open-source-hardware/nrf52840-series/mesh-node-t1': 'Mesh Node T1',
