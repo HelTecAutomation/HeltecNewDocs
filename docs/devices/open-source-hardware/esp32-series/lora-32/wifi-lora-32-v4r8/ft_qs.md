@@ -134,40 +134,6 @@ Double-press the **USER/IO** button to enter or exit the function selection menu
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Sensor Setting
 
 :::warning
@@ -197,3 +163,36 @@ The telemetry data may be displayed on different channels depending on the devic
 
 ![](img/ft/mc4.png) 
 
+---
+
+## Download Offline Map
+
+
+
+1.Open the map download tool: https://download.tiles.coalition.space/
+
+2.Select the map area by clicking the Rectangle Tool (Draw / Rectangle Tool) on the left toolbar, then drag on the map to define the required download region. Once finished, right-click or click the tool again to complete the selection.
+
+![](img/qs/1.png)
+
+3.Set Zoom Range (recommended default). Min Zoom represents the lowest zoom level (larger coverage area), and Max Zoom represents the highest zoom level (higher detail).
+
+4.Set Download Threads (recommended default). Higher values increase download speed but may cause network instability.
+
+5.Click Download Tiles to start downloading. A compressed file will be generated automatically.
+
+![](img/qs/2.png)
+
+6.**Extract the downloaded archive** to obtain the map tiles organized in the `z/x/y` directory structure.
+
+7. Create a `maps` folder in the root directory of the SD card, and then create an `osm` folder inside the `maps` folder.
+
+8.**Copy all extracted map tiles to the `SD:/maps/osm/` directory.** Make sure the original `z/x/y` directory structure is preserved without renaming or rearranging the folders.
+
+```
+SD:/maps/osm/{z}/{x}/{y}.png
+```
+
+9.**Insert the SD card into the device.** The F&T firmware will load the offline map tiles from the `SD:/maps/osm/` directory, making the offline map available for use.
+
+![](img/ft/osm.png)

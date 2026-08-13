@@ -117,3 +117,61 @@ Navigate to the last menu tab using the User button or touch input to access the
 Users can navigate to the last menu tab using the User button to view the sensor data screen.
 
 ![](img/mesh/9.jpg)
+
+---
+
+## Download Offline Map
+
+
+1.Open the map download tool: https://download.tiles.coalition.space/
+
+2.Select the map area by clicking the Rectangle Tool (Draw / Rectangle Tool) on the left toolbar, then drag on the map to define the required download region. Once finished, right-click or click the tool again to complete the selection.
+
+![](img/qs/1.png)
+
+3.Set Zoom Range (recommended default). Min Zoom represents the lowest zoom level (larger coverage area), and Max Zoom represents the highest zoom level (higher detail).
+
+4.Set Download Threads (recommended default). Higher values increase download speed but may cause network instability.
+
+5.Click Download Tiles to start downloading. A compressed file will be generated automatically.
+
+![](img/qs/2.png)
+
+6.**Extract the downloaded archive** to obtain the map tiles organized in the `z/x/y` directory structure.
+
+7.**Create a `maps` folder in the root directory of the SD card, and then create a map style folder inside it.** The general directory structure is:
+
+```text
+SD:/maps/<style>/z/x/y
+```
+
+For OpenStreetMap (OSM) map tiles, `osm` is recommended as the map style folder name.
+
+8.**Copy all extracted map tiles to the corresponding map style directory under `SD:/maps/`.** Make sure the original `z/x/y` directory structure is preserved without renaming or rearranging the folders.
+
+For example, when using `osm`:
+
+```text
+SD:/maps/osm/{z}/{x}/{y}.png
+```
+
+![](img/mesh/osm.png)
+
+9.**Insert the SD card into the expansion board and restart the device.** 
+
+:::tip
+Restarting the device is recommended to ensure that the SD card is properly detected.
+:::
+
+
+10.After the device starts up, check the **MUI home screen**. The SD card icon should be displayed if the SD card is detected successfully. If the SD card icon is not displayed, the SD card may not have been recognized correctly.
+
+![](img/mesh/sd.jpg)
+
+11.**Open the Map page** to view and use the downloaded offline map.
+
+![](img/mesh/maps.jpg)
+
+:::note
+For more information, please refer to the official [Meshtastic documentation](https://github.com/meshtastic/device-ui/tree/master/maps).
+:::

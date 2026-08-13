@@ -42,26 +42,10 @@ Before use, make sure the SD card is formatted as **exFAT**.
 
 ---
 
-
 ## Download Offline Map
 
-1.Open the map download tool: https://download.tiles.coalition.space/
+- [Meshtastic](/docs/devices/open-source-hardware/esp32-series/lora-32/wifi-lora-32-v4r8/meshtastic-qs#download-offline-map)
+- [Meshcore](/docs/devices/open-source-hardware/esp32-series/lora-32/wifi-lora-32-v4r8/ft_qs#download-offline-map)
+- [F&T](/docs/devices/open-source-hardware/esp32-series/lora-32/wifi-lora-32-v4r8/ft_qs#download-offline-map)
 
-2.Select the map area by clicking the Rectangle Tool (Draw / Rectangle Tool) on the left toolbar, then drag on the map to define the required download region. Once finished, right-click or click the tool again to complete the selection.
-
-![](img/qs/1.png)
-
-3.Set Zoom Range (recommended default). Min Zoom represents the lowest zoom level (larger coverage area), and Max Zoom represents the highest zoom level (higher detail).
-
-4.Set Download Threads (recommended default). Higher values increase download speed but may cause network instability.
-
-5.Click Download Tiles to start downloading. A compressed file will be generated automatically.
-
-![](img/qs/2.png)
-
-6.Extract the downloaded archive to obtain the tile directory in z/x/y format.
-
-7.Copy the entire extracted tile folder to the root directory or the designated map directory on the SD card, ensuring the folder structure remains unchanged (z/x/y hierarchy must be preserved).
-
-8.Insert the SD card into the device. The offline map will then be available for loading and use.
 
