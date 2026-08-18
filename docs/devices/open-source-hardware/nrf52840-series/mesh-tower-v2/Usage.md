@@ -15,6 +15,10 @@ The Meshtower comes with preconfigured battery management settings. Once connect
 However, before first use, it is recommended to connect an 18–24V solar panel or a USB-C PD3.0 (20V) power source to activate the battery function, and fully charge the built-in battery through the USB-C port or DC power interface to ensure more stable power delivery and optimal performance.
 :::
 
+:::danger
+The power switch must be [turned on for the battery](/docs/devices/open-source-hardware/nrf52840-series/mesh-tower-v2/Usage#turn-on-the-lithium-battery-power-switch) to charge.
+:::
+
 
 
 
@@ -22,20 +26,20 @@ However, before first use, it is recommended to connect an 18–24V solar panel 
 ### Via USB-C(recommended)
 The USB-C port requires PD3.0 and a 20V voltage input.
 
-![](img/q1.png)
+<img src={require('./img/q1.png').default} style={{width: '600px'}} />
 
 ### Via DC
 The DC interface is the solar panel input port, which uses an XT30 connector and supports an input voltage of 18-24V.
 
-![](img/q2.png)
+<img src={require('./img/q2.png').default} style={{width: '600px'}} />
 
 
-## Turn on the Lithium Battery Power Switch.
+## Turn on the Lithium Battery Power Switch
 
 - Toggle the switch to the **Left** to turn off the Lithium Battery Power.
 - Toggle the switch to the **Right** to turn on the Lithium Battery Power.
 
-![](img/q3.png)
+<img src={require('./img/q3.png').default} style={{width: '600px'}} />
 
 
 ## Checking Battery Level
@@ -46,7 +50,7 @@ The DC interface is the solar panel input port, which uses an XT30 connector and
 
 - You can view device-related information through the serial port in the [Meshtastic client](https://client.meshtastic.org/).
 
-![](img/q5.png)
+<img src={require('./img/q5.png').default} style={{width: '600px'}} />
 
 
 ## Firmware
@@ -59,19 +63,25 @@ For instructions on how to use Meshtastic, please refer to [Meshtastic official 
 If the serial port cannot be detected, the device may have entered low-power mode. Please press the RST button once to restart the device and connect to it before it enters low-power mode again.
 :::
 
-![](img/q4.png)
+<img src={require('./img/q4.png').default} style={{width: '600px'}} />
 
 ### Firmware Installation and Update
+
 You can install or update the [firmware](https://resource.heltec.cn/download/MeshTower_V1.1/firmware-heltec-mesh-tower-2.7.21.efd2613(1).uf2) via the USB-C port.<br />
 - Meshtastic Firmware: https://resource.heltec.cn/download/MeshTower_V1.1/firmware-heltec-mesh-tower-2.7.21.efd2613(1).uf2
 
-If your installation method requires entering DFU mode, you will need to open the device casing and double-press the RST button to enter DFU mode.
+:::warning
+The USB-C cable or port must support **USB 2.0**. If your device only supports **USB 1.x**, you may need a suitable adapter.
+:::
 
-![](img/q4.png)
+
+If your installation method requires entering DFU mode, you will need to open the device casing and **double-press the RST button** to enter DFU mode.
+
+<img src={require('./img/q4.png').default} style={{width: '600px'}} />
 
 At this point, the computer will pop up a USB drive named HT-n5262. Copy your firmware to this drive.
 
-![](img/quick_start/11.jpg)
 
+<img src={require('./img/quick_start/11.jpg').default} style={{width: '600px'}} />
 
 
