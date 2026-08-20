@@ -212,7 +212,12 @@ const DIR_NAME_MAP = {
   'platform/chirpstack/gateways_connect_to_chirpstack': 'Gateway Connect to Chirpstack',
   'platform/ttn': 'TTN/TTS',
   'platform/ttn/gateways_connect_to_ttn': 'Gateway Connect to TTN/TTS',
-  'devices/lorawan-application/lorawan-ns': 'LoRaWAN NS'
+  'devices/lorawan-application/lorawan-ns': 'LoRaWAN NS',
+  'platform/f&t':'F&T System',
+  'platform/f&t/devices':'Support Devices',
+  'platform/f&t/qs':'Quick Start',
+  'platform/f&t/devices/esp32':'ESP32 Series',
+  'platform/f&t/devices/nrf52840':'nRF52840 Series'
 };
 
 /**
