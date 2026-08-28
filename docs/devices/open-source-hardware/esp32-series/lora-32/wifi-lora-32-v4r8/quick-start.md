@@ -42,6 +42,10 @@ Before use, make sure the SD card is formatted as **exFAT**.
 
 ---
 
+## Flash Firmware
+
+We recommend using the Flash Download Tool to flash the firmware. For details, refer to [this document](/docs/devices/open-source-hardware/esp32-series/esp32-quick-start?esp32=meshtastic#flash-firmware-via-flash-download-tool).
+
 ## Download Offline Map
 
 - [Meshtastic](/docs/devices/open-source-hardware/esp32-series/lora-32/wifi-lora-32-v4r8/meshtastic-qs#download-offline-map)

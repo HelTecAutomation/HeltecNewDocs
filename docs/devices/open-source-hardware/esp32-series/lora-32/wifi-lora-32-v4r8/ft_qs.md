@@ -45,7 +45,7 @@ import styles from '@site/src/css/styles.module.css';
 Currently, F&T is the only available project. More open-source projects may be added in the future.
 :::
 
-7. After completing the configuration: `Click Erase Flash` --> `Click Program Firmware`
+7.After completing the configuration: `Click Erase Flash` --> `Click Program Firmware`
    
    
    
