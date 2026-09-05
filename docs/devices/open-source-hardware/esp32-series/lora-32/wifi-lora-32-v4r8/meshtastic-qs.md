@@ -46,6 +46,13 @@ The firmware is provided as a .bin file that includes both `tft` and `factory` i
 
 `Settings` → `Reboot/Shutdown` → `Press and hold the Bluetooth icon` → `Select OK`
 
+
+
+:::warning
+If you accidentally tap the **Bluetooth** icon, the device will enter Programming mode. If this happens, **press and hold the Bluetooth icon** to return to the **MUI interface**. Once you are back in MUI, simply repeat the steps above.
+:::
+
+
 ---
 
 ## BaseUI

@@ -29,8 +29,12 @@ You can power or charge the device via the USB-C port. The applicable voltage is
 3. Select the serial port to flash your code. After flashing is complete, press RST to restart.
 
 :::note
-  After entering Boot mode, the serial port number may change, so remember to reselect the port.
+- We recommend using the **[Flash Download Tool to flash the firmware](/docs/devices/open-source-hardware/esp32-series/esp32-quick-start?esp32=ff)**. 
+- After entering Boot mode, the serial port number may change, so remember to reselect the **Port**.
 :::
+
+
+
 
 :::warning
 Devices with and without a touchscreen use different firmware versions. Firmware for touchscreen-enabled devices is identified by the **`tft`** tag in the filename. Please select the firmware that matches your hardware configuration.
