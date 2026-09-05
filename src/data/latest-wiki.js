@@ -1,7 +1,7 @@
-// Auto-generated Wiki data - Last updated: 2026-08-20T03:58:59.514Z
+// Auto-generated Wiki data - Last updated: 2026-09-05T09:49:48.344Z
 export const latestWikiData = [
   {
-    "id": 13,
+    "id": 14,
     "title": "Heltec V3 & V4 Mountain Field Test: LoRa Mesh Performance in Real Terrain",
     "description": "Recently, Daniel put Heltec V3 and V4 devices through real-world tests in the challenging mountain terrain of central Italy.",
     "category": "technical",
@@ -14,6 +14,22 @@ export const latestWikiData = [
       "LoRa32",
       "Meshtastic",
       "Meshcore"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Every Node Counts Meshtastic for Beginners — a community mesh-networking workshop",
+    "description": "Thank you to Heltec for supporting Every Node Counts.",
+    "category": "news",
+    "date": "2026-08-20",
+    "image": "/news-assets/every-node-counts-meshtastic-for-beginners-a-community-mesh-networking-workshop/every-node-counts-meshtastic-for-beginners-a-community-mesh-networking-workshop/1.png",
+    "slug": "/news/every-node-counts-meshtastic-for-beginners-a-community-mesh-networking-workshop/every-node-counts-meshtastic-for-beginners-a-community-mesh-networking-workshop",
+    "tags": [],
+    "pinned": false,
+    "productCategory": [
+      "LoRa32",
+      "V3",
+      "Meshtastic"
     ]
   },
   {
@@ -32,7 +48,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 21,
+    "id": 22,
     "title": "LNA Guide",
     "description": "Learn about LNA and how to enable or disable it on your device.",
     "category": "technical",
@@ -64,7 +80,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "Heltec Supports MeshCore Community Meetup in the Netherlands",
     "description": "where local radio, LoRa, and mesh-networking enthusiasts gathered to exchange knowledge, test hardware, and discuss the future of decentralized communication networks.",
     "category": "news",
@@ -81,7 +97,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 26,
+    "id": 27,
     "title": "Ond’Expo 2026: A Real-World Connection Through Mesh Networking",
     "description": "Before Ond’Expo 2026 officially opened its doors to the public, the venue was already abuzz with intense yet orderly preparations.",
     "category": "news",
@@ -101,7 +117,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 17,
+    "id": 18,
     "title": "Heltec Wireless Tracker v2 – nRF",
     "description": "What can the Heltec Wireless Tracker v2 be used for ? In situations of disruption (unavailable cellular network, infrastructure overload, loss of coordination), the main problem is not just communication, but knowing the whereabouts of family members, friends, or clans.",
     "category": "news",
@@ -120,7 +136,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 18,
+    "id": 19,
     "title": "Heltec Wraps Up SCALE 2026",
     "description": "Heltec, a global leading enterprise specializing in IoT and smart hardware, today announced the successful conclusion of its participation in the Southern California Linux Expo (SCALE)",
     "category": "news",
@@ -139,7 +155,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 16,
+    "id": 17,
     "title": "Heltec WiFi LoRa 32 Expansion Kit",
     "description": "Test result and conclusion of Heltec WiFi LoRa 32 Expansion Kit",
     "category": "technical",
@@ -155,7 +171,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 28,
+    "id": 29,
     "title": "Tech Guardian for Wildlife in Dinokeng Reserve",
     "description": "New Technology System Helps Protect Wildlife in South Africa’s Dinokeng Reserve",
     "category": "news",
@@ -167,7 +183,7 @@ export const latestWikiData = [
     "productCategory": []
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "Heltec V4 Test Result",
     "description": "We are assessing the Heltec LoRa 32 V4's performance and real-world application in Meshtastic networks.",
     "category": "technical",
@@ -195,7 +211,7 @@ export const latestWikiData = [
     "productCategory": []
   },
   {
-    "id": 20,
+    "id": 21,
     "title": "LoRa Gate PCB – WLED-Powered LED Gates with Heltec HT-CT62",
     "description": "The LoRa Gate PCB is a custom controller board for wireless, battery-powered LED gates, built around the Heltec HT-CT62 module (ESP32-C3 + SX1262 LoRa). It is designed for applications where multiple LED “nodes” need to be controlled reliably over long distances with minimal wiring – for example **FPV race start/finish gates**, illuminated track elements, or interactive light installations.",
     "category": "2025 maker contest",
@@ -224,7 +240,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 25,
+    "id": 26,
     "title": "Maker Contest: Measure Your Living Environment",
     "description": "Contest Entry for the 2025 Heltec Maker Contest",
     "category": "2025 maker contest",
@@ -239,7 +255,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 23,
+    "id": 24,
     "title": "LoRaHunt - Monitoring live traps for invasive species",
     "description": "How we protect native wildlife with Heltec's LoRa modules",
     "category": "2025 maker contest",
@@ -253,7 +269,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "From a LoRa communication module to a safe text message",
     "description": "This is the story of Heltec's contribution to Louisiana's hurricane-resistant network.",
     "category": "news",
@@ -269,7 +285,7 @@ export const latestWikiData = [
     ]
   },
   {
-    "id": 27,
+    "id": 28,
     "title": "Shipping and warehouse policy",
     "description": "This Shipping & Delivery Policy outlines our methods, delivery times, and important terms regarding your orders.",
     "category": "template",
@@ -281,7 +297,7 @@ export const latestWikiData = [
     "productCategory": []
   },
   {
-    "id": 22,
+    "id": 23,
     "title": "LoRa Tracking in the Mountains",
     "description": "How We Tracked Paragliders Without Cellular Coverage",
     "category": "news",
@@ -294,21 +310,6 @@ export const latestWikiData = [
       "LoRa32",
       "nRF",
       "LoRaWAN"
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Building a life line in the storm",
-    "description": "**Heltec Devices Excel in Large-Scale Test of La Réunion's Gaulix Resilience Network**",
-    "category": "news",
-    "date": "2025-11-25",
-    "image": "/news-assets/building-a-lifeline-in-the-storm/building-a-life-line-in-the-storm/1.jpg",
-    "slug": "/news/building-a-lifeline-in-the-storm/building-a-life-line-in-the-storm",
-    "tags": [],
-    "pinned": false,
-    "productCategory": [
-      "Meshtastic",
-      "nRF"
     ]
   }
 ];
